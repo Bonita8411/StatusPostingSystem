@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="style.css">
+      <title>Index Page</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper cyan">
+              <a href="index.html" class="brand-logo center">Status Posting System</a>
+              <ul id="nav-mobile" class="left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Page</a></li>
+              </ul>
+              <ul id="nav-mobile" class="right">
+                <li><a href="poststatusform.php">Post Status</a></li>
+                <li><a href="searchstatusform.html">Search Status</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="center-wrapper">
+          <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header">
+                  <strong>1.What special features have you done, or attempted, in creating the site that we should know about?</strong>
+                  </div>
+              <div class="collapsible-body"><span>Using material design which is a desing language that combines the classic principle
+                  of sucessful design along with innovative and technology. Link to <a href="https://materializecss.com/"> materializecss</a> </span></div>
+            </li>
+
+            <li>
+              <div class="collapsible-header"><strong>2.Which parts did you have trouble with?</strong>
+            </div>
+              <div class="collapsible-body"><span>+I have trouble with storing the permissions into database. <br>
+                +I also having trouble with checking if the table already exist in the database.</span></div>
+            </li>
+
+            <li>
+              <div class="collapsible-header"><strong>3.What would you like to do better next time?</strong>
+              </div>
+              <div class="collapsible-body"><span>I would like to add icons for example: Search icon on search button.</span></div>
+            </li>
+
+            <li>
+              <div class="collapsible-header"><strong>4.What references/sources you have used to help you learn how to create your website?</strong>
+              </div>
+              <div class="collapsible-body"><span>+ How to used materializecss <a href="https://www.youtube.com/watch?v=nqT8c5OFjEQ&t=489s"> here is the link </a><br>
+                + How to impload array <a href="https://www.php.net/manual/en/function.implode.php"> here is the link </a><br>
+                + How to search in php <a href="https://stackoverflow.com/questions/23024114/simple-search-mysql-database-using-php"> here is the link </a><br>
+                + How to create the table if not exist  <a href="https://stackoverflow.com/questions/16554545/create-table-if-not-exists-fails-with-table-already-exists"> here is the link </a><br>
+                + Date format in php <a href="https://code.tutsplus.com/tutorials/working-with-date-and-time-in-php--cms-31768"> here is the link </a><br>
+                + Help to understand mysqli_query <a href="https://www.php.net/manual/en/mysqli.query.php"> here is the link </a><br>
+                </span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><strong>5.What have you learnt along the way?</strong>
+            </div>
+              <div class="collapsible-body"><span>This assignment help to understand more about database, html and php. 
+                  I also have a chance explore with materializecss to help my web page look moer user-friendly.</span></div>
+            </li>
+          </ul>
+          </div>
+          <div class="center-wrapper">
+            <a href="poststatusform.php">Post a new status</a><br/>
+            <a href="searchstatusform.html">Search status</a>
+            <a style="float:right" href="index.html">Home Page</a>
+          </div>
+        </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        var elem = document.querySelector('.collapsible.popout');
+        var instance = M.Collapsible.init(elem, {
+        accordion: false
+        });
+      </script>
+    </body>
+  </html>
